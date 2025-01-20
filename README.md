@@ -1,17 +1,17 @@
 ## OrderProcessing
-# This document provides instructions to set up and run the Order Processing System API project.
+## This document provides instructions to set up and run the Order Processing System API project.
 
-## Prerequisites
+# Prerequisites
 
 ## Ensure you have the following installed on your machine:
 
-# .NET Framework (version used in the project, e.g., .NET 6.0/7.0)
+## .NET Framework (version used in the project, e.g., .NET 6.0/7.0)
 
-# SQL Server (for database management)
+## SQL Server (for database management)
 
-# Visual Studio (or any compatible IDE)
+## Visual Studio (or any compatible IDE)
 
-# Git (if using version control)
+## Git (if using version control)
 
 ## Project Setup Instructions
 
@@ -36,34 +36,34 @@ Replace YOUR_SERVER_NAME with your local SQL Server instance.
 
 Navigate to the project folder and run the following command to restore NuGet packages:
 
-  # dotnet restore
+  ### dotnet restore
 
 # 4. Apply Database Migrations (Entity Framework Core - Code First Approach)
 
-# This project follows the Entity Framework Core Code First approach.
+## This project follows the Entity Framework Core Code First approach.
 # To create the database schema, run:
 
-  # dotnet ef database update
+  ### dotnet ef database update
 
 # To add a new migration, use:
 
-  # dotnet ef migrations add InitialCreate
+  ### dotnet ef migrations add InitialCreate
 
 # Ensure Entity Framework Core tools are installed by running:
 
-  # dotnet tool install --global dotnet-ef
+  ### dotnet tool install --global dotnet-ef
 
 # 5. Build the Project
 
 ## Compile the project using the following command:
 
- # dotnet build
+ ### dotnet build
 
 # 6. Run the Application
 
-# To start the API, use:
+## To start the API, use:
 
-  # dotnet run
+  ### dotnet run
 
 # 7. Test the API
 
@@ -85,7 +85,7 @@ Adjust logging levels as needed.
 
 To publish the project, use the following command:
 
-  dotnet publish -c Release -o ./publish
+ ### dotnet publish -c Release -o ./publish
 
 Deploy the output folder publish to your preferred hosting environment.
 
@@ -98,8 +98,8 @@ Check for any missing NuGet packages using dotnet restore.
 Review logs(C:/Logs) for any runtime errors.
 
 ## How to run the api
-# 1. Add New customer just pass name and email in requestbody.
-# 2. Add as many product you want to add.
-# 3. Create Order by providing customer id to it and selecting roduct by id ([1,2,etc]) it will update customer table as well..
+### 1. Add New customer just pass name and email in requestbody.
+### 2. Add as many product you want to add.
+### 3. Create Order by providing customer id to it and selecting roduct by id ([1,2,etc]) it will update customer table as well..
 
 Following these steps, you should be able to set up and run the Order Processing System API successfully.
